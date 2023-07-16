@@ -16,6 +16,8 @@ namespace primeiroprojetoMVC
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<StartupConfig>();
+                    webBuilder.UseKestrel();
+                    webBuilder.UseIISIntegration();
                 });
     }
 }
